@@ -128,6 +128,11 @@ Modify config/application.rb. Replace references to StarterKit.
 
 Need to initialize postgres user and db
 
+If you want to use slim instead of haml, remove the entries for haml in Gemfile and use 
+  gem "slim-rails"
+then, install `haml2slim`[https://github.com/slim-template/haml2slim] to convert
+ 
+
 If you see error: 
   Gem::LoadError: You have already activated rake 10.4.2, but your Gemfile requires rake 10.3.2. Prepending `bundle exec` to your command may solve this.
 delete Gemfile.lock and run 
